@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+
+<head>
+  <meta charset="utf-8">
+  <meta lang="ja">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MyMaterialComponents</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- include riot.js -->
+  <script src="https://cdn.jsdelivr.net/npm/riot@3.6/riot+compiler.min.js"></script>
+  <!-- include the tag -->
+  <script type="riot/tag" src="tags/toolbar.tag.html"></script>
+  <script type="riot/tag" src="tags/weather-card.tag.html"></script>
+  <!-- mount the tag -->
+  <script>
+    riot.mount('*')
+  </script>
+</head>
+
+<body>
+
+  <toolbar></toolbar>
+
+  <main class="mdc-toolbar-fixed-adjust">
+    <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell">
+          <weaterh-card></weaterh-card>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <weaterh-card></weaterh-card>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <weaterh-card></weaterh-card>
+        </div>
+      </div>
+    </div>
+
+</html>
